@@ -1,4 +1,4 @@
-Figure.prototype.sphere = (R = 10, count = 20,) => {
+Figure.prototype.sphere = (R = 10, count = 30,) => {
     const points = [];
     const edges = [];
     const polygons = [];
