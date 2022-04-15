@@ -229,14 +229,14 @@ input:checked[type="checkbox"]:after {
     padding-left: 30px;
 }
 select {
-    background: linear-gradient(180deg, rgba(197, 231, 252, 0.13) 0%, rgba(176, 207, 248, 0.07) 100%);
+    background:#FFFF00;
     width: 300px;
     height: 45px;
-    color: rgb(136, 145, 156);
+    color: rgb(0, 0, 0);
     outline: none;
     border: transparent;
     border-bottom: 1px solid;
-    border-color: rgb(216, 223, 235);
+    border-color: rgb(0, 0, 0);
     text-transform: capitalize;
     padding-left: 15px;
     font-size: 16px;
@@ -244,15 +244,15 @@ select {
     transition-duration: 0.3s;
 }
 select:hover {
-    border-color: #adc6fd;
-    color: #adc6fd;
+    border-color: #000000;
+    color: #000000;
 }
 select:focus {
-    border-color: #adc6fd;
-    color: #adc6fd;
+    border-color: #000000;
+    color: #000000;
 }
 option {
-    background-color: #222632;
+    background-color: #FFFF00;
 }
 .Options3D {
     display: none;
@@ -267,35 +267,36 @@ option {
     padding: 10px 10px 10px 10px;
     font-size: 18px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: linear-gradient(180deg, rgba(128, 206, 255, 0.13) 0%, rgba(106, 170, 255, 0.07) 100%);
-    color: rgb(216, 223, 235);
+    background: #FFFF00;
+    color: rgb(0, 0, 0);
     outline: none;
     border: 1.5px solid;
     border-radius: 1px;
-    border-color: rgb(216, 223, 235);
+    border-color: rgb(0, 0, 0);
     position: relative;
     user-select: none;
     transition: 0.3s;
 }
 .checkingButtonStyle:hover {
-    color: #0051ff;
-    border-color: #0051ff;
+    color: rgb(0, 0, 0);
+    border-color: #000000;
 }
 input[class="Options3D"]:checked + .checkingButtonStyle {
-    color: #0051ff;
-    border-color: #0051ff;
-    background-color: #b9e3ff1c;
+    color: #000000;
+    border-color: #000000;
+    background-color: #FFFF00;
 }
 .allows {
     margin-top: 20px;
     height: 50px;
 }
+/*Сила освещения */
 #powerOfLight {
     -webkit-appearance: none;
     background: transparent;
     height: 0px;
     outline: none;
-    border: 1px solid #0051ff;
+    border: 1px solid #FFFF00;
     border-radius: 9px;
 }
 #powerOfLight::-webkit-slider-thumb {
@@ -326,10 +327,10 @@ input[class="Options3D"]:checked + .checkingButtonStyle {
     transform: rotate(-135deg);
 }
 #arrow-left:hover {
-    border-color: #adc6fd;
+    border-color: #FFFF00;
 }
 #arrow-left:active {
-    border-color: #0051ff;
+    border-color: #FFFF00;
 }
 #arrow-right {
 	width: 15px;
@@ -342,34 +343,35 @@ input[class="Options3D"]:checked + .checkingButtonStyle {
     transform: rotate(45deg);
 }
 #arrow-right:hover {
-    border-color: #adc6fd;
+    border-color: #FFFF00;
 }
 #arrow-right:active {
-    border-color: #0051ff;
+    border-color: #FFFF00;
 }
 .addDelFigureBlock {
     display: flex;
     justify-content: center;
     margin-bottom: 5px;
 }
+/*Add Figure Delete figure */
 .countOfFigures {
     width: 150px;
     padding: 5px 10px 5px 10px;
     font-size: 18px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: linear-gradient(180deg, rgba(128, 206, 255, 0.13) 0%, rgba(106, 170, 255, 0.07) 100%);
-    color: rgb(216, 223, 235);
+    background: rgba(255,255,0);
+    color: rgb(0, 0, 0);
     outline: none;
     border: none;
     border-bottom: 1px solid;
-    border-color: rgb(216, 223, 235);
+    border-color: rgb(0, 0, 0);
     transition: 0.3s;
 }
 .countOfFigures:hover {
-    border-color: #adc6fd;
-    color: #adc6fd;
+    border-color: #000000;
+    color: #000000;
 }
 .countOfFigures:active {
-    border-color: #0051ff;
+    border-color: #FFFF00;
     transition: 0.4ms;
 }

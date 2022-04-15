@@ -42,28 +42,6 @@ class Graph3DComponent extends Component {
         this.render();
     }
 
-    figuresAnimation() {
-        this.figures.forEach(figure => {
-            const matrix = figure.animations.reduce((accumulator, anime) => {
-                const center = anime.center || figure.center;
-                const { x, y, z } = center;
-                const matrix = [
-                    this.graph3D.move({ x, y, z }),
-                    this.graph3D[anime.method](anime.value),
-                    this.graph3D.move({ x: -x, y: -y, z: -z })
-                ].reduce(
-                    (S, matrix) => this.graph3D.multMatrix(S, matrix),
-                    this.graph3D.one()
-                );
-                if (anime.center) {
-                    this.graph3D.transform(matrix, figure.center);
-                }
-                return this.graph3D.multMatrix(accumulator, matrix);
-            }, this.graph3D.one());
-            figure.points.forEach(point => this.graph3D.transform(matix, point));
-        });
-    }
-
     _addEventListeners() {
         document.addEventListener('keydown', event => this.keyDownHandler(event));
         document.getElementById('addFigure').addEventListener('click', () => { this.figures.push((new Figure).sphere()); this.render() });
@@ -135,7 +113,7 @@ class Graph3DComponent extends Component {
             }
         }, 75)
     }
-
+//Выбор цвета
     selectColor() {
         this.figures.forEach(figure => {
             figure.polygons.forEach(polygon => {
@@ -279,7 +257,3 @@ class Graph3DComponent extends Component {
     }
 
 }
-
-//Элипсоид, Однополостный гипреболоид, Двуполостный гипреболоид
-//Конус, Элиптический параболоид, Гиперболический параболоид
-//Элиптический цилиндр, Гиперболический цилиндр, Параболический цилиндр

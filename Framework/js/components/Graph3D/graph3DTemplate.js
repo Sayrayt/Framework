@@ -11,7 +11,7 @@ Template.prototype.graph3DTemplate = () => `
                 <input id="powerOfLight" type="range" min="5000" max="45000", step="1000" value="45000">
             </div>
             <div class="colorSelector">
-                <input id="colorSelector" type="color" value="#009dff">
+                <input id="colorSelector" type="color" value="#FFFF00">
             </div>
             <div>
                 <label>
@@ -46,18 +46,16 @@ Template.prototype.graph3DTemplate = () => `
                 <button id="arrow-left"></button>
                 <select id="figures">
                     <option class ="option" value="1">cube</option>
-                    <option class ="option" value="2">cone</option>
-                    <option class ="option" value="3">pyramid</option>
-                    <option class ="option" value="4" selected="selected">sphere</option>
-                    <option class ="option" value="5">ellipsoid</option>
-                    <option class ="option" value="6">ellipticalCylinder</option>
-                    <option class ="option" value="7">ellipticalParaboloid</option>
-                    <option class ="option" value="8">hyperbolicCylinder</option>
-                    <option class ="option" value="9">hyperbolicParaboloid</option>
-                    <option class ="option" value="10">parabolicCylinder</option>
-                    <option class ="option" value="11">singleHyperboloid</option>
-                    <option class ="option" value="12">doubleHyperboloid</option>
-                    <option class ="option" value="13">tor</option>
+                    <option class ="option" value="2">pyramid</option>
+                    <option class ="option" value="3" selected="selected">sphere</option>
+                    <option class ="option" value="4">ellipsoid</option>
+                    <option class ="option" value="5">ellipticalCylinder</option>
+                    <option class ="option" value="6">ellipticalParaboloid</option>
+                    <option class ="option" value="7">hyperbolicCylinder</option>
+                    <option class ="option" value="8">hyperbolicParaboloid</option>
+                    <option class ="option" value="9">parabolicCylinder</option>
+                    <option class ="option" value="10">singleHyperboloid</option>
+                    <option class ="option" value="11">doubleHyperboloid</option>
                 </select>
                 <button id="arrow-right"></button>
             </div>

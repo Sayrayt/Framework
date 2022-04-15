@@ -49,7 +49,7 @@ class Canvas {
 
     point(x, y, colour, size) {
         this.context.beginPath();
-        this.context.strokeStyle = colour || '#f00';
+        this.context.strokeStyle = colour || '#000';
         this.context.arc(this.xs(x), this.ys(y), size || 3, 0, 2 * Math.PI);
         this.context.stroke();
     }
